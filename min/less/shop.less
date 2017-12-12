@@ -1,0 +1,75 @@
+/* 商城模块 */
+/*顶部*/
+.met-nav-right-shop{
+	&.nav>li{
+		background:@navhvbg; margin-bottom:10px;
+		&:last-child{ margin-bottom:0px;}
+		>a{ padding-top:0px; padding-bottom:0px; .less-heightline(40px); }
+	}
+	.dropdown-menu li i{ color:#9E9E9E; }
+	.dropdown>a>i{ margin-right:5px; color:#76838f; }
+	#topcart-body .avatar{
+		width:50px;
+		img{.less-radius(0);}
+	}
+	.dropdown-menu-header{ padding:20px 20px;}
+	.dropdown-menu-footer{ height:55px; line-height:55px; padding:0px 15px!important;}
+	@media (min-width: 768px) {
+		margin-top: 10px;margin-left: 30px;
+		&.nav>li{
+			margin-left:20px;margin-left:5px; margin-bottom:0px;
+			&:first-child{margin-left: 0;}
+		}
+		.dropdown-menu{ top:50px; }
+	}
+	@media (max-width: 991px) {
+		margin-left: 10px;
+	}
+	@media (max-width: 767px) {
+		margin-left: 0;margin-right: 0;
+	}
+}
+/*产品详情页右侧*/
+.shop-product-intro{
+	&+.para{margin-top: 20px;}
+	#price{ font-size:32px; }
+	.form-group{ margin-bottom:0px; }
+	del{position: relative;top: -2px;font-weight:300;
+		&:not(:first-child){margin-left: 20px;}
+	}
+	label{ margin-bottom:0px;}
+	.selectpara-body{
+		a.btn{ margin-top:8px; }
+		.selectpara{ min-width:70px; text-align:center;}
+		.selectpara.btn-outline.btn-danger:focus,.selectpara.btn-outline.btn-danger:hover{
+			background-color:transparent;color:#f96868;
+		}
+	}
+	.height-10{ height:10px; }
+	.text-default{ padding:20px; background:#F3F7F9;}
+	.purchase-btn a.btn{ width:100%; display:block; }
+	.purchase-btn a.btn i{ margin-right:8px; }
+	@media (min-width: 768px) {
+		.purchase-btn a.btn{ width:auto;display: inline-block;padding:10px 35px; }
+	}
+	@media (max-width: 767px) {
+		.price{padding: 10px 20px !important;}
+		.product-tocart{margin-top: 10px;}
+	}
+}
+/*产品详情页时尚模式*/
+.met-showproduct.pagetype2{
+	@media (min-width: 768px) {
+		.shop-btn-body{ margin-left:20px; }
+	}
+	@media (max-width:767px) {
+		.navbar-toggle{ padding:0px; float:none; }
+		.shop-btn{ padding:6px 13px; font-size:12px; line-height:1.5; }
+	}
+	#shop-fashion-option{
+		.modal-content,.modal-header{.less-radius(0);}
+		@media (max-width:767px) {
+			.modal-body{padding: 15px;}
+		}
+	}
+}

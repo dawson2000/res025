@@ -1,0 +1,28 @@
+/* 留言模块 */
+.met-message{
+	padding:30px 0px;
+	@media (max-width:767px) {
+		padding:0px;
+	}
+	background:#f2f2f2;
+	.col-md-6{float: none;margin: auto;}
+	.met-message-body,.met-message-submit{.less-page-content;.less-box-shadow(0 1px 1px rgba(0,0,0,.05));}
+	.met-message-body{
+		.media-left{
+			padding-right:0px;display: block;float: left;
+			i{font-size:36px; color:#a3afb7;}
+		}
+		.media-body{
+			 width: calc(100% - 46px);word-wrap: break-word;display: block;float: left;
+			p{ font-size:14px; color:#76838f; }
+		}
+	}
+	.met-message-submit{
+		@media (min-width: 992px) {
+			margin-left:30px;
+		}
+		@media (max-width:767px) {
+			padding-bottom:20px;
+		}
+	}
+}

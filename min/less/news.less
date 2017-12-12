@@ -1,0 +1,169 @@
+/*文章模块列表页*/
+.met-news{
+	padding:30px 0px;border-top:1px solid @bordercolor;background:#f2f2f2;
+	@media (max-width:767px) {
+		padding:0px;
+	}
+	.met-news-body{ .less-box-shadow(0 1px 1px rgba(0,0,0,.05)); }
+	.met-news-list{
+		.less-page-content;
+		@media (max-width:767px) {
+			padding:15px;
+		}
+	}
+	.news-headlines{
+	    padding-bottom: 30px;border-bottom: 1px solid #f0f2f5;margin-bottom: 30px;overflow: hidden;
+	    .slick-slide{
+	    	width: 100%;position: relative;
+	    	&:first-child{display: block;}
+	    }
+		.headlines-text{
+			width: 100%;position: absolute;left: 0;bottom:30px;text-align: center;
+			h3{ margin:0px;font-size:20px;line-height: 1.5;color: #fff;}
+		}
+		.slick-dots{bottom:35px;}
+		@media (max-width:767px) {
+			padding-bottom: 20px;margin-bottom: 20px;
+			.headlines-text{
+				bottom: 20px;
+				h3{font-size:16px;}
+			}
+			.slick-dots{bottom:20px;}
+		}
+	}
+	// 列表
+	ul.met-page-ajax{
+		.less-uldestyle;
+		li{
+			border-bottom:1px solid @bordercolor;padding:30px 0;
+			h4{
+				margin: 0 0 20px;font-size:22px;
+				a{ .less-link; }
+			}
+			p{
+				font-size:16px; font-weight:300;
+				&.des{ color:#76838f; margin-bottom:10px;}
+				&.info{
+					margin-bottom:0px;font-size:16px;font-weight:300;color:#a3afb7;
+					span{
+						margin-left: 10px;
+						&:first-child{margin: 0;}
+					}
+					i{ color:#a3afb7; font-weight:300; }
+				}
+			}
+			@media (max-width:991px) {
+				h4{font-size: 18px;margin-bottom: 10px;}
+			}
+			@media (max-width:767px) {
+				padding: 20px 0;
+				.media-left{
+					padding-right:10px;
+					.media-object{ width:100px; }
+				}
+				h4{ font-size:16px; margin-bottom:5px; }
+				p{
+					font-size: 14px;
+					&.des{
+						margin-bottom: 5px;overflow : hidden;text-overflow: ellipsis;
+					    display: -webkit-box;
+					    -webkit-line-clamp: 3;
+				    	-webkit-box-orient: vertical;
+					}
+				}
+			}
+			@media (max-width:349px) {
+				.media-left,.media-body{width: 100%;display: block;}
+				.media-left{
+					padding: 0;
+					.media-object{width: auto;max-width: 100%;}
+				}
+				.media-body{margin-top: 15px;}
+			}
+		}
+	}
+	// 模式3
+	&.type-3{
+		.met-news-body{.less-box-shadow(none);}
+		.widget{
+			.less-radius(0);
+			.widget-body,.widget-header{.less-radius(0);}
+			.widget-title{
+				font-size: 24px;
+				a{ .less-link; }
+			}
+			.widget-metas{
+				span{
+					margin-left: 10px;
+					&:first-child{margin: 0;}
+				}
+			}
+			@media (max-width:767px) {
+				margin: 15px 0 0;
+				&:first-child{margin: 0;}
+				.widget-title{font-size: 18px;}
+				.widget-body{padding: 15px 10px;}
+			}
+		}
+	}
+}
+/* 文章模块侧栏 */
+.met-news-bar{
+	margin-left:30px;padding:20px;background:@pageeditbg;.less-box-shadow(0 1px 1px rgba(0,0,0,.05));
+	@media (max-width:991px) {
+		margin-left:0px;margin-top:30px;padding:30px;
+	}
+	@media (max-width:767px) {
+		margin: 0;padding:15px;
+	}
+	ul.column{
+		.less-uldestyle;
+		li{ margin-bottom:10px; }
+		li a{ font-size:16px; .less-link; &.active{ color:@active_color; } }
+	}
+	.recommend{
+		margin:20px 0px;padding:20px 0px;border-top:1px solid @bordercolor;border-bottom:1px solid @bordercolor;
+		h3{ font-size:18px; font-weight:300; margin:0px; }
+		.list-group{
+			margin-top:10px;margin-bottom:0px;
+			a{ .less-link; font-size:15px; }
+		}
+	}
+}
+/* 文章模块详情页 */
+.met-shownews{
+	padding:30px 0px;border-top:1px solid @bordercolor;background:#f2f2f2;
+	.met-shownews-body{ .less-box-shadow(0 1px 1px rgba(0,0,0,.05)); }
+	.met-shownews-header,.met-shownews-footer{ .less-page-content;  }
+	.met-shownews-header{ padding-bottom:0px; }
+	h1{ margin:0px; margin-bottom:5px;font-size:32px;line-height: 1.5;font-weight: 300;}
+	.info{
+		padding-bottom:20px;border-bottom:1px solid @bordercolor;font-size:16px;font-weight:300;color:#a3afb7;
+		span{ padding-right:10px; }
+		@media (max-width:767px) {
+			padding-bottom:20px;
+		}
+	}
+	.met-shownews-footer{
+		padding-top:0px;
+		ul.pager{
+			margin:0px;border-top:1px solid @bordercolor;padding-top:20px;
+		}
+	}
+	@media (max-width:767px) {
+		padding:0px;
+		h1{font-size: 24px;}
+		.met-shownews-header{ padding-top:20px; }
+	}
+}
+/*社会化分享按钮*/
+.met_tools_code{
+	margin-top:30px;text-align:center;font-size:0px;
+	@media (max-width:767px) {
+		margin-top:10px;
+	}
+	.bdsharebuttonbox{
+		display:inline;
+		a{ float:none; display:inline-block; }
+	}
+}
