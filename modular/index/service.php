@@ -87,11 +87,6 @@ echo <<<EOT
 								</a>
 							</h4>
 								<p class="des">{$val['description']}</p>
-								<p class="info">
-									<span>{$val['updatetime']}</span>
-									<span class="margin-left-10">{$val['issue']}</span>
-									<span class="margin-left-10"><i class="icon wb-eye margin-right-5" aria-hidden="true"></i>{$val['hits']}</span>
-								</p>
 						</div>
 					</div>
 				</li>
